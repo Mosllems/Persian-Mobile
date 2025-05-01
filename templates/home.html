@@ -1,0 +1,842 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %} Home {% endblock title %}
+
+{% block content %}
+
+
+    <main class="main">
+        <section class="home">
+            <div class="container">
+                <div class="row align-item-center">
+                    <div class="col-12 col-lg-7">
+                        <div class="home__content">
+                            <h1 class="home__welcom"> سلام به پرشین موبایل خوش آمدید</h1>
+                            <br>
+                            <ul class="home__list">
+                                <li class="home__caption">خرید موبایل خود را به عهده پرشین موبایل بسپارید.</li>
+                                <li class="home__caption">پرشین موبایل این اطمینان را به شما می دهد تا خرید خوبی داشته
+                                    باشید.
+                                </li>
+                                <li class="home__caption">پرشین موبایل در فروش گوشی هایی با برند اپل و سامسونگ و شیائومی
+                                    فعالیت می کند.
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="home__photo"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aboutus_click" class="aboutus">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-head__title">درباره ما</h2>
+                    <p class="section-head__caption">چرا مارا انتخاب میکنید؟</p>
+                    <span class="section-head__line"></span>
+                </div>
+                <div class="about">
+                    <div class="about__cover">
+                        <img src="{% static "image/img2.jpg" %}" alt="about us" class="about__img">
+                    </div>
+                    <div class="about__content">
+                        <h3 class="about__title">چرا مارا انتخاب میکنید؟</h3>
+                        <p class="about__description">مجموعه‌ ما موبایل های متنوعی را ارائه می‌دهد که شامل جدیدترین
+                            موبایل ها
+                            از برند شیائومی ، سامسونگ و اپل می باشد.
+                            هدف ما این است که تجربه خریدی مطمئمن و آسان را برای مشتریان فراهم کنیم تا مشتری راضی و خشنود
+                            باشد.
+                            مطمئمن باشید که رضایت شما باعث افزایش اعتبار ما
+                            و نارضایتی شما باعث از دست رفتن اعتبار ما است
+                        </p>
+                        <h4 class="about__list-title">مزایا خرید از پرشین موبایل: </h4>
+                        <ul class="about-list">
+                            <li class="about-list__item">اطلاعات دقیق از محصول</li>
+                            <li class="about-list__item">خرید انلاین آسان</li>
+                            <li class="about-list__item">گارانتی و خدمات پس از فروش</li>
+                            <li class="about-list__item">رابط کاربری آسان</li>
+                            <li class="about-list__item">تنوع محصولات</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="product_click" class="products">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-head__title">محصولات</h2>
+                    <p class="section-head__caption">برند مورد نظر خود را انتخاب کنید</p>
+                    <span class="section-head__line"></span>
+                </div>
+                <div class="products_us">
+                    <div class="row row_flex">
+                        <div class="col-6 col-md-4 flex_mobile">
+                            <div class="products-box_one">
+                                <img class="products_img" src={% static "image/iphone.png.webp" %} alt="iphone">
+                                <a class="products_link" href="./products/apple/apple.html">
+                                    <svg class="svg_products" xmlns="http://www.w3.org/2000/svg" width="390" height="90"
+                                         viewBox="0 0 16 16" id="apple">
+                                        <g fill-rule="evenodd">
+                                            <path d="M11.6218,4.7571c-0.0193291,-2.02332 1.65317,-2.99846 1.72865,-3.04467c-0.939167,-1.37684 -2.40442,-1.56532 -2.92624,-1.58735c-1.24564,-0.125075 -2.431,0.734352 -3.06342,0.734352c-0.630702,0 -1.60726,-0.7153 -2.63953,-0.694961c-1.35921,0.0188997 -2.61125,0.789063 -3.31105,2.00483c-1.41025,2.44865 -0.360481,6.07511 1.01479,8.0616c0.671226,0.970026 1.47351,2.06429 2.52553,2.02476c1.0148,-0.0397892 1.39689,-0.654453 2.62078,-0.654453c1.22488,0 1.56888,0.654453 2.64224,0.634268c1.08898,-0.0196037 1.78139,-0.990762 2.44848,-1.96475c0.771157,-1.12822 1.0887,-2.22035 1.10719,-2.27707c-0.0234604,-0.0085233 -2.12539,-0.815491 -2.14743,-3.23655v0Z"
+                                                  transform="translate(.745 3.743)"></path>
+                                            <path d="M2.49696,2.55553c0.559066,-0.677623 0.934193,-1.61793 0.831414,-2.55553c-0.804695,0.031969 -1.78039,0.537152 -2.3568,1.21266c-0.51813,0.599437 -0.97158,1.55665 -0.848624,2.47462c0.897671,0.0697992 1.81466,-0.455431 2.37401,-1.13175v0Z"
+                                                  transform="translate(7.857)"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 flex_mobile">
+                            <div class="products-box_two">
+                                <img class="products_img" src={% static "image/samsung.png.webp" %} alt="samsung">
+                                <a class="products_link" href="./products/samsung/samsung.html">
+                                    <svg class="svg_products" xmlns="http://www.w3.org/2000/svg" width="390"
+                                         height="130" viewBox="0 0 192.756 192.756" id="samsung">
+                                        <g fill-rule="evenodd" clip-rule="evenodd">
+                                            <path fill="#fff" d="M0 0h192.756v192.756H0V0z"></path>
+                                            <path d="M104.127 95.542s-1.559-.964-2.523-1.337c0 0-2.984-1.383-3.576-2.041 0 0-1.163-1.096-.482-2.369 0 0 .285-.833 1.514-.833 0 0 1.6.088 1.6 1.403v1.855h5.734l-.01-2.732s.441-4.474-6.754-4.671c0 0-5.659-.372-7.282 2.676 0 0-.637.68-.637 3.048v1.711s-.065 1.974.943 3.246c0 0 .57.834 1.974 1.754 0 0 2.851 1.535 4.562 2.414 0 0 1.727.986 1.5 2.555 0 0-.141 1.611-1.809 1.545 0 0-1.525-.068-1.525-1.648v-1.854h-6.11v2.693s-.171 5.15 7.68 5.15c0 0 7.502.152 7.852-5.285v-2.193c-.001 0 .265-3.332-2.651-5.087zM74.771 85.458l-1.92 12.032h-.449l-1.834-11.924H60.99l-.48 21.789h5.671l.068-16.417h.446l3.006 16.414h5.966l2.969-16.408h.395l.137 16.411h5.701l-.614-21.897h-9.484zM41.013 85.549L37.24 107.33h6.105l2.235-16.888h.502l2.234 16.888h6.104l-3.772-21.781h-9.635zM169.115 95.242v3.213h1.566v3.449c0 1.686-1.441 1.717-1.441 1.717-1.752 0-1.686-1.602-1.686-1.602v-11.93c0-1.229 1.555-1.295 1.555-1.295 1.492 0 1.502 1.466 1.502 1.466v1.814h5.748c.188-3.541-.518-4.398-.518-4.398-1.426-3.202-6.82-3.027-6.82-3.027-8.289 0-7.369 6.36-7.369 6.36v11.535c.178 5.965 8.346 5.359 8.484 5.354 3.633-.402 4.73-1.557 4.73-1.557 1.01-.75 1.27-1.789 1.27-1.789.289-.605.361-2.533.361-2.533v-6.777h-7.382zM150.062 98.787h-.25l-5.833-13.323H137v21.893h5.68l-.34-13.321h.254l6.043 13.321h6.767V85.462h-5.752l.41 13.325zM123.135 101.902s.082 1.797-1.584 1.797c0 0-1.752.094-1.752-1.752l-.018-16.47h-6.23v16.339s-.639 6.184 8.088 6.184c0 0 7.584.09 7.584-5.9V85.478h-6.088v16.424zM29.136 95.542s-1.557-.964-2.522-1.336c0 0-2.982-1.382-3.574-2.041 0 0-1.163-1.098-.481-2.368 0 0 .284-.833 1.512-.833 0 0 1.601.087 1.601 1.402v1.855h5.736l-.011-2.733s.438-4.474-6.754-4.67c0 0-.542-.035-1.337.005 0 0-4.357.234-5.915 2.624-.009.018-.022.031-.031.047 0 0-.636.679-.636 3.048v1.711s-.066 1.974.943 3.246c0 0 .57.834 1.974 1.754 0 0 2.85 1.535 4.561 2.414 0 0 1.729.984 1.5 2.555 0 0-.141 1.611-1.808 1.545 0 0-1.525-.068-1.525-1.648v-1.855h-6.111v2.695s-.171 5.15 7.68 5.15c0 0 7.5.152 7.853-5.285v-2.191c0-.002.262-3.336-2.655-5.091z"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-5 col-md-4 flex_mobile">
+                            <div class="products-box_three">
+                                <img class="products_img" src={% static "image/xiaomi.png.webp" %} alt="xiaomi">
+                                <a class="products_link" href="./products/xiaomi/xaiomi.html">
+                                    <svg class="svg_products" xmlns="http://www.w3.org/2000/svg" width="390" height="90"
+                                         xml:space="preserve" viewBox="0 0 16 16" id="xiaomi">
+                                            <path d="M6.5 3H0v11h2V5h4.5C7.327 5 8 5.673 8 6.5V14h2V6.5C10 4.57 8.43 3 6.5 3z"></path>
+                                        <path d="M4 7h2v7H4zM12 3h2v11h-2z"></path>
+                                          </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cleverly_click" class="cleverly">
+            <div class="container skew-reset">
+                <div class="section-head ">
+                    <h3 class="section-head__title">خرید هوشمندانه</h3>
+                    <p class="section-head__caption">داشتن اطلاعات کافی قبل از خرید</p>
+                    <span class="section-head__line"></span>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <ul class="cleverly-list h-full">
+                            <!-- data-conten-id="#Buying-mobile"<==یک کاستوم اتریبیوت میسازیم -->
+                            <li class="cleverly-list__item cleverly-list__item--active"
+                                data-content-id="#Buying-mobile">
+                                <svg class="cleverly-list__icon" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                     stroke-linejoin="round" stroke-miterlimit="2" clip-rule="evenodd"
+                                     viewBox="0 0 320 320" id="shopping">
+                                    <g transform="translate(-1721.99 -254.301)" fill="#ffffff"
+                                       class="color000000 svgShape">
+                                        <g transform="matrix(1 0 0 1.6975 595.351 860.684)" fill="#ffffff"
+                                           class="color000000 svgShape">
+                                            <g transform="matrix(4.16386 0 0 2.45293 -2310.83 -1764.56)" fill="#ffffff"
+                                               class="color000000 svgShape">
+                                                <path d="M880.274,631.73C876.336,631.73 873.139,634.927 873.139,638.865C873.139,642.803 876.336,646 880.274,646C884.212,646 887.409,642.803 887.409,638.865C887.409,634.927 884.212,631.73 880.274,631.73ZM861.788,631.73C857.85,631.73 854.653,634.927 854.653,638.865C854.653,642.803 857.85,646 861.788,646C865.726,646 868.923,642.803 868.923,638.865C868.923,634.927 865.726,631.73 861.788,631.73ZM880.274,635.73C882.004,635.73 883.409,637.135 883.409,638.865C883.409,640.595 882.004,642 880.274,642C878.544,642 877.139,640.595 877.139,638.865C877.139,637.135 878.544,635.73 880.274,635.73ZM861.788,635.73C863.519,635.73 864.923,637.135 864.923,638.865C864.923,640.595 863.519,642 861.788,642C860.058,642 858.653,640.595 858.653,638.865C858.653,637.135 860.058,635.73 861.788,635.73ZM837.192,584.763L853.907,624.162C854.769,626.194 856.763,627.514 858.971,627.514C864.362,627.514 877.7,627.514 883.092,627.514C885.299,627.514 887.293,626.194 888.155,624.162C890.421,618.821 896.384,604.765 899.563,597.272C900.284,595.573 900.105,593.626 899.086,592.088C898.067,590.549 896.345,589.624 894.5,589.624L843.6,589.624L840.875,583.2C840.201,581.612 838.816,580.435 837.14,580.025C834.687,579.425 830.427,578.384 830.427,578.384C829.354,578.122 828.271,578.78 828.009,579.852C827.747,580.924 828.405,582.008 829.477,582.27L836.191,583.911C836.64,584.021 837.011,584.336 837.192,584.763ZM845.297,593.624L857.59,622.6C857.825,623.154 858.368,623.514 858.971,623.514L883.092,623.514C883.694,623.514 884.238,623.154 884.473,622.6C884.473,622.6 895.881,595.71 895.881,595.71C896.077,595.246 896.029,594.715 895.751,594.296C895.473,593.876 895.003,593.624 894.5,593.624L845.297,593.624ZM864.007,610.569L876.221,610.569C877.325,610.569 878.221,609.673 878.221,608.569C878.221,607.465 877.325,606.569 876.221,606.569L864.007,606.569C862.903,606.569 862.007,607.465 862.007,608.569C862.007,609.673 862.903,610.569 864.007,610.569Z"
+                                                      fill="#ffffff" class="color000000 svgShape"></path>
+                                            </g>
+                                        </g>
+                                        <g transform="matrix(1 0 0 1.6975 595.351 860.684)" fill="#ffffff"
+                                           class="color000000 svgShape">
+                                            <g transform="matrix(.73492 0 0 .43294 -96.471 -442.333)" fill="#ffffff"
+                                               class="color000000 svgShape">
+                                                <rect width="435.422" height="435.422" x="1664.28" y="196.59"
+                                                      fill="none"></rect>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="cleverly-list__text">خرید گوشی موبایل</span>
+                            </li>
+                            <li class="cleverly-list__item" data-content-id="#Buying-online">
+                                <svg class="cleverly-list__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                     id="Mobile">
+                                    <g fill="#ffffff" class="color000000 svgShape">
+                                        <path d="M34 0H14a4 4 0 0 0-4 4v40a4 4 0 0 0 4 4h20a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4Zm2 44a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2v-2h24Zm0-4H12V7h5.75c1 1.33-.41 1 11.25 1 .62 0 .85-.47 1.25-1H36Zm0-35c-7.5 0-6.52-.3-7.5 1h-9c-1-1.34 0-1-7.5-1V4a2 2 0 0 1 2-2h20a2 2 0 0 1 2 2Z"
+                                              fill="#ffffff" class="color000000 svgShape"></path>
+                                        <path d="M26 3h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Z" fill="#ffffff"
+                                              class="color000000 svgShape"></path>
+                                        <circle cx="20" cy="27" r="2" fill="#ffffff"
+                                                class="color000000 svgShape"></circle>
+                                        <circle cx="29" cy="27" r="2" fill="#ffffff"
+                                                class="color000000 svgShape"></circle>
+                                        <path d="M19 11.92a1 1 0 0 0-1-.92h-3a1 1 0 0 0 0 2h2.08c.28 3.4 0 .42.92 10.09a1 1 0 0 0 1 .91h11a1 1 0 0 0 1-.76l2-8A1 1 0 0 0 32 14H19.17zM30.72 16l-1.5 6h-9.31l-.56-6zM29 32H19a3 3 0 0 0 0 6h10a3 3 0 0 0 0-6zm0 4H19a1 1 0 0 1 0-2h10a1 1 0 0 1 0 2z"
+                                              fill="#ffffff" class="color000000 svgShape"></path>
+                                    </g>
+                                </svg>
+                                <span class="cleverly-list__text">خريد اینترنتی گوشی</span>
+                            </li>
+                            <li class="cleverly-list__item" data-content-id="#Buy-iPhone">
+                                <svg class="cleverly-list__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"
+                                     id="Apple">
+                                    <path d="M30.54 26.24a14 14 0 0 1-1.41 2.52 13.16 13.16 0 0 1-1.8 2.24A3.55 3.55 0 0 1 25 32a5.94 5.94 0 0 1-2.15-.51 6.13 6.13 0 0 0-2.31-.49 6.42 6.42 0 0 0-2.38.51 6.49 6.49 0 0 1-2.05.54A3.35 3.35 0 0 1 13.73 31a14 14 0 0 1-1.89-2.27 15.54 15.54 0 0 1-2-4A14.55 14.55 0 0 1 9 20a8.6 8.6 0 0 1 1.14-4.52A6.6 6.6 0 0 1 12.51 13a6.44 6.44 0 0 1 3.22-.91 7.7 7.7 0 0 1 2.49.58 7.67 7.67 0 0 0 2 .58 12 12 0 0 0 2.19-.68 7.23 7.23 0 0 1 3-.53 6.34 6.34 0 0 1 4.95 2.61 5.48 5.48 0 0 0-2.92 5 5.52 5.52 0 0 0 1.81 4.16A6.18 6.18 0 0 0 31 25c-.15.42-.3.82-.46 1.21ZM25.5 6.4a5.59 5.59 0 0 1-1.43 3.66 4.85 4.85 0 0 1-4 2 3.79 3.79 0 0 1 0-.49 5.7 5.7 0 0 1 1.51-3.69 5.85 5.85 0 0 1 1.85-1.39 5.65 5.65 0 0 1 2.11-.6 4.67 4.67 0 0 1 0 .52Z"
+                                          fill="#ffffff" class="color000000 svgShape"></path>
+                                </svg>
+                                <span class="cleverly-list__text">خرید گوشی آیفون</span>
+                            </li>
+                            <li class="cleverly-list__item" data-content-id="#Buy-samsung">
+                                <svg class="cleverly-list__icon" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 200.777 66.659" id="Samsung">
+                                    <path fill="#ffffff"
+                                          d="M200.653 15.87C197.923.194 150.822-4.698 95.446 4.943 72.19 8.994 51.191 14.969 34.838 21.691c2.512.055 4.375.631 5.507 1.76.885.886 1.332 2.102 1.332 3.617v1.555h-5.43V27.25c0-1.144-.686-1.853-1.901-1.853-1.021 0-1.65.461-1.853 1.369a2.63 2.63 0 0 0 .022 1.084c.581 2.375 8.644 3.85 9.521 8.233.115.564.271 1.771.025 3.498-.503 3.535-3.609 4.899-7.563 4.899-5.519 0-7.761-2.614-7.761-6.218l.004-1.705h5.821l.003 2.124c0 1.194.868 1.853 2.05 1.853 1.12 0 1.774-.451 2-1.373.105-.424.151-1.049-.04-1.527-1.077-2.702-8.606-3.964-9.533-8.333-.207-.982-.224-1.818-.052-2.875a5.606 5.606 0 0 1 .482-1.511C9.333 33.398-1.278 42.732.124 50.791c2.733 15.678 49.833 20.565 105.208 10.924 24.342-4.237 46.226-10.58 62.881-17.688-.241.012-.475.038-.725.038-3.79 0-7.174-1.42-7.525-5.294-.062-.705-.073-1-.075-1.402l.002-8.906c0-.384.045-1.058.088-1.406.449-3.744 3.409-5.288 7.512-5.288 3.175 0 7.068.911 7.496 5.291.057.55.051 1.137.05 1.33v.841h-5.484v-1.255c0-.027-.008-.496-.068-.789-.09-.447-.471-1.483-2.033-1.483-1.543 0-1.943 1.038-2.043 1.484-.057.245-.084.597-.084.987v9.679c-.005.336.012.599.046.792.027.152.304 1.486 2.1 1.486 1.783 0 2.059-1.334 2.084-1.486.047-.262.053-.574.051-.792v-2.999h-2.158v-3.23h7.631v5.746c-.002.391-.008.68-.074 1.4-.092 1.016-.412 1.876-.914 2.611 17.663-8.387 27.947-17.57 26.563-25.512zM57.065 43.653l-2.778-18.876h-.1l-2.849 18.876h-5.855l3.938-21.317h9.553l3.914 21.317h-5.823zm28.162 0l-.129-18.511h-.094l-3.445 18.511h-5.495l-3.428-18.511h-.098l-.125 18.511h-5.445l.472-21.317h8.758l2.55 15.835h.125l2.557-15.835h8.754l.47 21.317h-5.427zm25.641-4.131c-.586 4.129-4.631 4.851-7.49 4.851-4.747 0-7.683-2.029-7.683-6.158l.003-1.684h5.751l.004 2.098c0 1.139.803 1.836 2.043 1.836 1.106 0 1.754-.444 1.979-1.356.104-.425.147-1.045-.037-1.513-1.06-2.651-8.53-3.95-9.438-8.251-.208-.975-.223-1.803-.052-2.849.632-3.899 4.374-4.709 7.386-4.709 2.694 0 4.655.588 5.831 1.764.877.878 1.321 2.083 1.321 3.582v1.538h-5.378v-1.357c0-1.162-.721-1.834-1.88-1.834-1.028 0-1.65.457-1.854 1.356a2.59 2.59 0 0 0 .026 1.072c.576 2.364 8.568 3.809 9.443 8.151.113.554.268 1.743.025 3.463zm19.918-1.937c.008.4-.031 1.199-.053 1.404-.328 3.512-2.84 5.297-7.447 5.297-4.625 0-7.139-1.785-7.465-5.297a16.957 16.957 0 0 1-.053-1.4V22.331h5.502V38.07c-.006.352.012.612.047.793.068.35.416 1.486 1.969 1.486 1.548 0 1.896-1.137 1.969-1.482.031-.186.05-.459.05-.798V22.331h5.481v15.254zm23.705 5.851h-7.656l-5.139-16.885h-.086l.285 16.885h-5.336v-21.1h7.977l4.75 16.22h.111l-.281-16.22h5.375v21.1z"
+                                          class="color2d4f9e svgShape"></path>
+                                </svg>
+                                <span class="cleverly-list__text">خرید گوشی سامسونگ</span>
+                            </li>
+                            <li class="cleverly-list__item" data-content-id="#Buy-Xiaomi">
+                                <svg class="cleverly-list__icon" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 750 750" id="xiaomi">
+                                    <path d="M375,117.18a257.81,257.81,0,1,0,182.31,75.51A256.16,256.16,0,0,0,375,117.18Zm0,475.64c-120.11,0-217.82-97.71-217.82-217.82S254.89,157.18,375,157.18,592.82,254.89,592.82,375,495.11,592.82,375,592.82Z"
+                                          fill="#ffffff" class="color000000 svgShape"></path>
+                                    <path d="M362.29,288.29H273.71a20,20,0,0,0-20,20V438a20,20,0,0,0,40,0V328.29h68.58a37.57,37.57,0,0,1,37.53,37.53V438a20,20,0,0,0,40,0v-72.2A77.62,77.62,0,0,0,362.29,288.29Z"
+                                          fill="#ffffff" class="color000000 svgShape"></path>
+                                    <path d="M346.76 338.09a20 20 0 00-20 20v83.62a20 20 0 1040 0V358.09A20 20 0 00346.76 338.09zM476.29 288.29a20 20 0 00-20 20V441.71a20 20 0 0040 0V308.29A20 20 0 00476.29 288.29z"
+                                          fill="#ffffff" class="color000000 svgShape"></path>
+                                </svg>
+                                <span class="cleverly-list__text">خرید گوشی شیائومی</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="cleverly-content cleverly-content--show" id="Buying-mobile">
+                            <h3 class="cleverly-content__title">خرید گوشی موبایل</h3>
+                            <p class="cleverly-content__description">
+                                در حال حاضر، خرید موبایل به یک نیاز ضروری برای همه‌ی افراد جامعه تبدیل شده؛ به‌طوری که
+                                افراد با هر سن و سالی و فارغ از جنسیت از انواع گوشی استفاده می‌کنند. مهمترین عاملی که در
+                                خرید گوشی مورد توجه قرار می‌گیرد، قیمت گوشی موبایل است.
+                                یکی از عواملی که در تعیین قيمت موبايل نقش مهمی دارد برند تولیدکننده گوشی همراه است.
+                                به‌طور مثال، می توان گفت کمپانی‌هایی مانند اپل و سامسونگ بهترین گوشی های بازار را تولید
+                                می‌کنند.
+                                قیمت گوشی های آیفون همیشه نسبت به سایر برندها گرانتر بوده و برای خرید گوشی اپل حداقل
+                                باید 50 میلیون تومان هزینه کنید. حتی قیمت گوشی های سامسونگ نسبت به هم‌رده‌های ساخته شده
+                                توسط کمپانی‌های دیگر نیز گران‌تر است.
+                                قیمت گوشی های شیائومی در رده بعدی قرار دارد.
+                            </p>
+                        </div>
+                        <div class="cleverly-content" id="Buying-online">
+                            <h3 class="cleverly-content__title">خرید گوشی اینترنتی</h3>
+                            <p class="cleverly-content__description">
+                                خرید آنلاین گوشی راحت‌ترین روش خرید تلفن همراه است. بدون اینکه وقت زیادی را صرف مراجعه
+                                به فروشگاه‌های حضوری کنید، می‌توانید سفارش خود را در چند ثانیه ثبت کنید. در واقع،
+                                پیداکردن یک سایت خرید گوشی مطمئن برای هر فرد امری ضروری است؛ چرا که امکان دارد بسیاری از
+                                افراد فرصت لازم را برای مراجعه حضوری به بازار و خرید و مشاهده قيمت روز گوشي نداشته
+                                باشند. در این حالت، بهترین کار این است که از یک سایت خرید موبایل کمک بگیرند. مشاهده
+                                مشخصات گوشی به‌طور دقیق یکی دیگر از دلایل قابل قبول برای خرید گوشی آنلاین است. در این
+                                روش، شما می‌توانید اطلاعات کامل و عکس گوشی را با جزئیات، رنگ‌بندی و حتی انباکس گوشی
+                                مشاهده کرده و به‌راحتی بهترین گوشی موبایل را برای خود انتخاب کنید.
+                            </p>
+                        </div>
+                        <div class="cleverly-content" id="Buy-iPhone">
+                            <h3 class="cleverly-content__title">خرید گوشی آیفون</h3>
+                            <p class="cleverly-content__description">
+                                متاسفانه، در حال حاضر بازار فروش آیفون با تقلب و تقلید نسخه‌های ریپک یا رفرش شده همراه
+                                است؛ این به آن معنی است که برخی از فروشندگان غیرمعتبر ممکن است گوشی‌هایی را به شما عرضه
+                                کنند که نسخه‌های کپی یا بازسازی شده از آیفون‌های اصلی هستند. این گوشی‌ها معمولاً کیفیت و
+                                عملکرد پایین‌تری نسبت به محصولات اصلی دارند و ممکن است با مشکلات فنی روبه‌رو شوید.
+                                بنابراین، بهترین راه برای جلوگیری از خريد گوشي ايفون ریپک یا رفرش شده این است که از
+                                فروشندگان معتبر و قابل اعتماد خرید کنید. قیمت گوشی های آیفون را می‌توانید در فروشگاه
+                                اینترنتی پرشین موبايل مشاهده کنید.
+                            </p>
+                        </div>
+                        <div class="cleverly-content" id="Buy-samsung">
+                            <h3 class="cleverly-content__title">خرید گوشی سامسونگ
+                            </h3>
+                            <p class="cleverly-content__description">
+                                سامسونگ یک برند فعال در حوزه تکنولوژی است که طرفداران بسیاری در سراسرجهان دارد. سامسونگ
+                                همواره جزء مطرح‌ترین‌های حوزه موبایل و گجت های دیجیتال است. هر ساله، سامسونگ تعداد زیادی
+                                گوشی موبایل با برند خود روانه‌ی بازار می‌کند.
+                                استراتژی سامسونگ در تولید گوشی موبایل این است که موبایل های خود را با امکانات مختلف و
+                                برچسب قیمتی بسیار متنوع تولید کند تا همه‌ی افراد بتوانند صاحب یک گوشی سامسونگ باشند.
+                                قیمت انواع گوشی سامسونگ با توجه به مدل، سال تولید و ویژگی‌های فنی متغیر است. مدل ساده
+                                گوشی سامسونگ قیمت تقریبا 1 میلیون تومانی دارد و قیمت آخرین مدل گوشی سامسونگ در حال حاضر
+                                حدود 60 یا 70 میلیون تومان است.
+                            </p>
+                        </div>
+                        <div class="cleverly-content" id="Buy-Xiaomi">
+                            <h3 class="cleverly-content__title">خرید گوشی شیائومی</h3>
+                            <p class="cleverly-content__description">
+                                انواع گوشی شیائومی امروزه در بازار موبایل، با جذابیت‌ها و ویژگی‌های منحصر به فرد خود،
+                                توانسته‌اند توجه بسیاری از مصرف‌کنندگان را به خود جلب کنند. در لیست قیمت گوشی شیائومی
+                                می‌توان مشاهده کرد که گوشي پوكو و قیمت گوشی ردمی اقتصادی‌تر از سری پرچمدار شیائومی هستند
+                                و فروش بالاتری را ثبت می‌کنند.تنوع در طراحی گوشی های شیائومی، مشخصات سخت‌افزاری قابل
+                                قبول و برچسب قیمتی متنوع باعث افزایش فروش گوشی شیائومی در بازار شده است.
+                                علاوه بر گوشی شیائومی ارزان و میان‌رده، سری دیگری از گوشی های شیائومی گیمینگ به نام بلک
+                                شارک وجود دارند که گوشی های مناسب بازی در این سری قرار می گیرند. قیمت گوشی بلک شارک از
+                                دیگر سری های گوشی شیائومی بالاتر است.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bestseller">
+            <div class="container">
+                <div class="section-head">
+                    <h3 class="section-head__title">محصولات پرفروش</h3>
+                    <p class="section-head__caption">تو این بخش محصولات پر فروش ما رو ببین</p>
+                    <span class="section-head__line"></span>
+                </div>
+                <ul class="bestseller-list">
+                    <li class="bestseller-list__item bestseller-list__item--active"
+                        data-content-id="#Special-discounts">تخفیفات ویژه
+                    </li>
+                    <li class="bestseller-list__item" data-content-id="#iphone">آیفون</li>
+                    <li class="bestseller-list__item" data-content-id="#galaxy">سامسونگ</li>
+                    <li class="bestseller-list__item" data-content-id="#xaiomi">شیائومی</li>
+                </ul>
+                <div class="bestseller-content bestseller-content--show" id="Special-discounts">
+                    <!-- این یک ساختار سوییپر هست که برای کشیدن اسلاید ها به سمت چپ و راست استفاده میشود این اسلایدها میتواند هر محتوایی باشند -->
+                    <div class="swiper1 swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-f2d6ce70f3b98206" aria-live="polite"
+                             style="transform: translate3d(0px, 0px, 0px);">
+                            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3"
+                                 style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/apple/images/img2.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/apple/information2/informatin2.html" class="product__link"
+                                           target="_blank">گوشی موبایل اپل مدل Iphone 16 ظرفیت 128 گیگابایت رم 8
+                                            گیگابایت - نان اکتیو | پارت نامبر CH/A </a>
+                                    </h4>
+                                    <div class="product__offer">
+                                        <span class="product__offer-percent">3%</span>
+                                        <span class="product_offer-price">۹۱,۵۰۰,۰۰۰ </span>
+                                    </div>
+                                    <div class="product__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۸۸,۷۵۵,۰۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.5</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/apple/information2/informatin2.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3"
+                                 style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/apple/images/img3.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/apple/information3/informatin3.html" class="product__link"
+                                           target="_blank"> گوشی موبایل اپل مدل Iphone 16 Pro Max ظرفیت 256 گیگابایت رم
+                                            8 گیگابایت نات اکتیو | پارت نامبر ZA/A </a>
+                                    </h4>
+                                    <div class="product__offer">
+                                        <span class="product__offer-percent">3%</span>
+                                        <span class="product_offer-price">۱۷۹,۰۰۰,۰۰۰</span>
+                                    </div>
+                                    <div class="product__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۱۷۳,۶۳۰,۰۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">5</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/apple/information3/informatin3.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/samsung/images/img3.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/samsung/information3/informatin3.html" class="product__link"
+                                           target="_blank">گوشی موبایل سامسونگ مدل Galaxy A16 ظرفیت 128 گیگابایت رم 4
+                                            گیگابایت - ویتنام</a>
+                                    </h4>
+                                    <div class="product__offer">
+                                        <span class="product__offer-percent">3%</span>
+                                        <span class="product_offer-price">۱۲,۰۵۰,۰۰۰</span>
+                                    </div>
+                                    <div class="product__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۱۱,۶۸۸,۵۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.5</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/samsung/information3/informatin3.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/samsung/images/img1.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/samsung/information1/informatin1.html" class="product__link"
+                                           target="_blank">گوشی موبایل سامسونگ مدل Galaxy S24 Ultra ظرفیت 256 گیگابایت
+                                            رم 12 گیگابایت | 5G - ویتنام</a>
+                                    </h4>
+                                    <div class="product__offer">
+                                        <span class="product__offer-percent">3%</span>
+                                        <span class="product_offer-price">۹۷,۱۱۱,۰۰۰</span>
+                                    </div>
+                                    <div class="product__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۹۴,۱۹۷,۶۷۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">5</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/samsung/information1/informatin1.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/samsung/images/img4.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/samsung/information4/informatin4.html" class="product__link"
+                                           target="_blank">گوشی موبایل سامسونگ مدل Galaxy A25 ظرفیت 256 گیگابایت رم 8
+                                            گیگابایت | 5G - ویتنام</a>
+                                    </h4>
+                                    <div class="product__offer">
+                                        <span class="product__offer-percent">3%</span>
+                                        <span class="product_offer-price">۲۱,۴۰۰,۰۰۰</span>
+                                    </div>
+                                    <div class="product__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۲۰,۷۵۸,۰۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.7</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/samsung/information4/informatin4.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/xiaomi/images/img3.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/xiaomi/information3/informatin3.html" class="product__link"
+                                           target="_blank"> گوشی موبایل شیائومی مدل Poco M5S ظرفیت 256 گیگابایت رم 8
+                                            گیگابایت</a>
+                                    </h4>
+                                    <div class="product__offer">
+                                        <span class="product__offer-percent">3%</span>
+                                        <span class="product_offer-price">۱۶,۸۰۰,۰۰۰ </span>
+                                    </div>
+                                    <div class="product__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۱۶,۲۹۶,۰۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.2</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/xiaomi/information3/informatin3.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/xiaomi/images/img6.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/xiaomi/information6/informatin6.html" class="product__link"
+                                           target="_blank"> گوشی موبایل شیائومی مدل Poco F6 Pro ظرفیت 512 گیگابایت رم 12
+                                            گیگابایت | 5G</a>
+                                    </h4>
+                                    <div class="product__offer">
+                                        <span class="product__offer-percent">3%</span>
+                                        <span class="product_offer-price">۴۳,۹۰۰,۰۰۰</span>
+                                    </div>
+                                    <div class="product__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۴۲,۵۸۳,۰۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.9</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/xiaomi/information6/informatin6.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- برای صفحه بندی اسلاید ها استفاده میشود -->
+                        <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span
+                                class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                                aria-current="true"></span><span class="swiper-pagination-bullet"></span><span
+                                class="swiper-pagination-bullet"></span></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+                <div class="bestseller-content" id="iphone">
+                    <div class="swiper2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-f2d6ce70f3b98206" aria-live="polite"
+                             style="transform: translate3d(0px, 0px, 0px);">
+                            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3"
+                                 style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/apple/images/img1.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/apple/information1/informatin1.html" class="product__link"
+                                           target="_blank"> گوشی موبایل اپل مدل Iphone 13 ظرفیت 128 گیگابایت رم 4
+                                            گیگابایت - نات اکتیو | پارت نامبر SE/A تک سیم کارت </a>
+                                    </h4>
+                                    <div class="product__offer">
+                                    </div>
+                                    <div class="product__wrapper helper__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">54,999,000</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.2</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/apple/information1/informatin1.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3"
+                                 style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/apple/images/img4.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/apple/information4/informatin4.html" class="product__link"
+                                           target="_blank"> گوشی موبایل اپل مدل Iphone 16 Pro ظرفیت 256 گیگابایت رم 8
+                                            گیگابایت - نات اکتیو | پارت نامبر ZA/A </a>
+                                    </h4>
+                                    <div class="product__offer">
+                                    </div>
+                                    <div class="product__wrapper helper__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۱۶۳,۹۹۹,۰۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.9</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/apple/information4/informatin4.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3"
+                                 style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/apple/images/img5.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/apple/information5/informatin5.html" class="product__link"
+                                           target="_blank"> گوشی موبایل اپل مدل Iphone 16 ظرفیت 256 گیگابایت رم 8
+                                            گیگابایت - نان اکتیو | پارت نامبر CH/A </a>
+                                    </h4>
+                                    <div class="product__offer">
+                                    </div>
+                                    <div class="product__wrapper helper__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۱۰۹,۹۹۹,۰۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.7</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/apple/information5/informatin5.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- برای صفحه بندی اسلاید ها استفاده میشود -->
+                        <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span
+                                class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                                aria-current="true"></span><span class="swiper-pagination-bullet"></span><span
+                                class="swiper-pagination-bullet"></span></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+                <div class="bestseller-content" id="galaxy">
+                    <div class="swiper3 swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-f2d6ce70f3b98206" aria-live="polite"
+                             style="transform: translate3d(0px, 0px, 0px);">
+                            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3"
+                                 style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/samsung/images/img2.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/samsung/information2/informatin2.html" class="product__link"
+                                           target="_blank"> گوشی موبایل سامسونگ مدل Galaxy A55 ظرفیت 256 گیگابایت رم 8
+                                            گیگابایت | 5G - ویتنام</a>
+                                    </h4>
+                                    <div class="product__offer">
+                                    </div>
+                                    <div class="product__wrapper helper__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">33,888,000</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.8</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/samsung/information2/informatin2.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3"
+                                 style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/samsung/images/img6.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/samsung/information6/informatin6.html" class="product__link"
+                                           target="_blank">گوشی موبایل سامسونگ مدل Galaxy S25 Ultra ظرفیت 256 گیگابایت
+                                            رم 12 گیگابایت | 5G - ویتنام</a>
+                                    </h4>
+                                    <div class="product__offer">
+                                    </div>
+                                    <div class="product__wrapper helper__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۱۱۵,۴۳۰,۰۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">5</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/samsung/information6/informatin6.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/samsung/images/img5.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/samsung/information5/informatin5.html" class="product__link"
+                                           target="_blank">گوشی موبایل سامسونگ مدل Galaxy A35 ظرفیت 256 گیگابایت رم 8
+                                            گیگابایت | 5G - ویتنام</a>
+                                    </h4>
+                                    <div class="product__offer">
+                                    </div>
+                                    <div class="product__wrapper helper__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۲۷,۲۳۷,۶۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.8</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/samsung/information5/informatin5.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- برای صفحه بندی اسلاید ها استفاده میشود -->
+                        <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span
+                                class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                                aria-current="true"></span><span class="swiper-pagination-bullet"></span><span
+                                class="swiper-pagination-bullet"></span></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+                <div class="bestseller-content" id="xaiomi">
+                    <div class="swiper4 swiper-initialized swiper-horizontal swiper-pointer-events swiper-rtl swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-f2d6ce70f3b98206" aria-live="polite"
+                             style="transform: translate3d(0px, 0px, 0px);">
+                            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3"
+                                 style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/xiaomi/images/img5.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/xiaomi/information5/informatin5.html" class="product__link"
+                                           target="_blank">گوشی موبایل شیائومی مدل Poco X7 Pro ظرفیت ۵۱۲ گیگابایت رم ۱۲
+                                            گیگابایت | 5G</a>
+                                    </h4>
+                                    <div class="product__offer">
+                                    </div>
+                                    <div class="product__wrapper helper__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۳۴,۴۷۷,۰۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.7</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/xiaomi/information5/informatin5.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3"
+                                 style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/xiaomi/images/img4.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/xiaomi/information4/informatin4.html" class="product__link"
+                                           target="_blank">گوشی موبایل شیائومی مدل Poco C75 ظرفیت 256 گیگابایت رم 8
+                                            گیگابایت</a>
+                                    </h4>
+                                    <div class="product__offer">
+                                    </div>
+                                    <div class="product__wrapper helper__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۱۰,۹۹۹,۰۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.1</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/xiaomi/information4/informatin4.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 1110px;">
+                                <div class="product">
+                                    <img class="product__image" src="./products/xiaomi/images/img8.png" alt="product1">
+                                    <h4 class="product__name">
+                                        <a href="./products/xiaomi/information8/informatin8.html" class="product__link"
+                                           target="_blank">گوشی موبایل شیائومی مدل Redmi Note 14 Pro ظرفیت 512 گیگابایت
+                                            رم 12 گیگابایت | 5G</a>
+                                    </h4>
+                                    <div class="product__offer">
+                                    </div>
+                                    <div class="product__wrapper helper__wrapper">
+                                        <div class="product__price">
+                                            <span class="product__price-number">۲۸,۱۹۹,۰۰۰</span>
+                                            <span class="product__price-unit">تومان</span>
+                                        </div>
+                                        <div class="product__rating">
+                                            <span class="product__rating-number">4.7</span>
+                                            <svg class="product__rating-icon" xmlns="http://www.w3.org/2000/svg"
+                                                 viewBox="0 0 24 24" fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                      clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a class="link__buttom" href="./products/xiaomi/information8/informatin8.html"
+                                       target="_blank">مشاهده بیشتر</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- برای صفحه بندی اسلاید ها استفاده میشود -->
+                        <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span
+                                class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                                aria-current="true"></span><span class="swiper-pagination-bullet"></span><span
+                                class="swiper-pagination-bullet"></span></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+{% endblock content %}
