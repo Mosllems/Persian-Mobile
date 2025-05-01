@@ -1,0 +1,297 @@
+{% load static %}
+
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} Persian Mobile {% endblock title %}</title>
+    <link rel="icon" type="image/png" href="{% static "/image/svg/mobile.svg" %}">
+    <link rel="stylesheet" href={% static "styles/app.css" %}>
+    <link rel="stylesheet" href={% static "styles/responsive.css" %}>
+    <link rel="stylesheet" href={% static "styles/swiper-bundle.min.css" %}>
+</head>
+
+
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="nav__right">
+                <a href="#" class="nav__logo">
+                    <svg class="nav__logo--right" xmlns="http://www.w3.org/2000/svg" width="50" height="50" id="mobile">
+                        <g transform="translate(0 -1004.362)">
+                            <circle cx="24" cy="1028.362" r="24" fill="#3a6c87"></circle>
+                            <path fill="#2f4b6c"
+                                  d="M23.814 1052.352a24 24 0 0 0 .186.01 24 24 0 0 0 1.697-.06 24 24 0 0 0 2.383-.29 24 24 0 0 0 2.34-.525 24 24 0 0 0 2.277-.756 24 24 0 0 0 2.19-.98 24 24 0 0 0 2.08-1.194 24 24 0 0 0 1.951-1.394 24 24 0 0 0 1.803-1.584 24 24 0 0 0 1.634-1.756 24 24 0 0 0 1.454-1.91 24 24 0 0 0 1.254-2.045 24 24 0 0 0 1.042-2.16 24 24 0 0 0 .823-2.254 24 24 0 0 0 .593-2.324 24 24 0 0 0 .36-2.372 24 24 0 0 0 .119-2.396 24 24 0 0 0-.043-1.22l-14.355-14.356-.014-.012c-.037-.036-.078-.066-.12-.098-.026-.02-.05-.045-.08-.064l-.003-.002a1.429 1.429 0 0 0-.518-.215 1.495 1.495 0 0 0-.295-.03h-16.14c-.793 0-1.432.617-1.432 1.382v29.23a1.352 1.352 0 0 0 .107.528c.027.06.062.117.096.173.012.02.022.042.035.061.027.04.06.075.09.111.025.03.045.061.072.088l.018.018 8.396 8.396z"></path>
+                            <path fill="#fff"
+                                  d="M16.432 1012.365c-.793 0-1.432.616-1.432 1.38v29.233c0 .765.639 1.381 1.432 1.381h16.14c.793 0 1.43-.616 1.43-1.38v-29.233c0-.765-.637-1.381-1.43-1.381h-16.14zm1.064.996a.507.5 0 0 1 .506.5.507.5 0 0 1-.506.5.507.5 0 0 1-.506-.5.507.5 0 0 1 .506-.5zm4.506.014h4v.986h-4v-.986zm-5 1.986h15v24h-15v-24zm7.52 25a1.52 1.5 0 0 1 1.519 1.5 1.52 1.5 0 0 1-1.52 1.5 1.52 1.5 0 0 1-1.519-1.5 1.52 1.5 0 0 1 1.52-1.5z"></path>
+                        </g>
+                    </svg>
+                </a>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#aboutus_click">درباره ما</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link font" href="#product_click">محصولات</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link font_two" href="#cleverly_click">خرید هوشمندانه</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contactus_click">ارتباط با ما</a>
+                    </li>
+                </ul>
+                <div class="nav__toggle-icon">
+                    <div class="nav__toggle-line"></div>
+                </div>
+                <div class="search">
+                    <form id="formsearch" class="searchform" action="#" method="get">
+                        <button type="submit" class="search_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="-1 -1 24 24"
+                            "="" stroke="#0ABEAD">
+                            <path d="M24.852,24.2l-6.993-7.294a9.882,9.882,0,1,0-.7.636l7.009,7.312a.47.47,0,0,0,.665.013A.473.473,0,0,0,24.852,24.2ZM10.865,18.88a8.968,8.968,0,1,1,8.941-8.968A8.965,8.965,0,0,1,10.865,18.88Z"
+                                  transform="translate(-0.983)"></path>
+                            </svg>
+                        </button>
+                        <input type="text" name="keyword" placeholder="نام محصول را وارد کنید"
+                               class="search_inp search__inppp" id="advancedSearchInput" autocomplete="off">
+                    </form>
+                </div>
+            </div>
+            <ul class="nav__left">
+                <li class="nav__left--login login__link--none2">
+                    <a class="login__link" href="./login/login.html">
+                        <svg class="login__link--logo" xmlns="http://www.w3.org/2000/svg" width="50" height="40"
+                             fill="none" viewBox="0 0 24 24" id="login">
+                            <path fill="#000" fill-rule="evenodd"
+                                  d="M9 4C9 2.89543 9.89543 2 11 2H20C21.1046 2 22 2.89543 22 4V20C22 21.1046 21.1046 22 20 22H11C9.89543 22 9 21.1046 9 20V15.5C9 15.2239 8.77614 15 8.5 15C8.22386 15 8 15.2239 8 15.5V20C8 21.6569 9.34315 23 11 23H20C21.6569 23 23 21.6569 23 20V4C23 2.34315 21.6569 1 20 1H11C9.34315 1 8 2.34315 8 4V8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5V4ZM17.8536 12.3536L12.8536 17.3535C12.6584 17.5488 12.3418 17.5488 12.1465 17.3536C11.9512 17.1583 11.9512 16.8417 12.1465 16.6464L16.2929 12.5H1.5C1.22386 12.5 1 12.2761 1 12C1 11.7239 1.22386 11.5 1.5 11.5H16.2929L12.1465 7.35355C11.9512 7.15829 11.9512 6.84171 12.1465 6.64644C12.3418 6.45118 12.6584 6.45119 12.8536 6.64645L17.8536 11.6464C18.0488 11.8417 18.0488 12.1583 17.8536 12.3536Z"
+                                  clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav__left--login login__link--none">
+                    <a class="login__link" href="./login/login.html">
+                        ورود | ثبت نام
+                    </a>
+                </li>
+                <li class="nav__left--bying">
+                    <a class="nav__btn">
+                        <svg class="nav__left--logo" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                             fill="none" viewBox="0 0 128 128" id="shopping-cart">
+                            <circle cx="49" cy="107" r="5" fill="#333333"></circle>
+                            <circle cx="87" cy="107" r="5" fill="#333333"></circle>
+                            <path stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"
+                                  d="M43.116 77H80.0627C87.276 77 90.8827 77 93.7816 75.2093C96.6806 73.4186 98.3028 70.178 101.547 63.6968V63.6968C109.382 48.045 113.3 40.2192 109.783 34.5255C106.266 28.8319 97.5594 28.8319 80.1468 28.8319H32.0126M43.116 77L32.2617 29.8155L31.3089 26.0536C30.2073 21.7046 29.6566 19.5301 28.0311 18.2651C26.4057 17 24.1625 17 19.6762 17H16M43.116 77H39.7626C35.4824 77 32.0126 80.4698 32.0126 84.75V84.75C32.0126 89.0302 35.4824 92.5 39.7626 92.5H94.8878"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav-menu">
+            <span class="close-btn">x</span>
+            <h2 class="nav-menu__title">سبد خرید</h2>
+            <!-- <ul class="list-menu">
+
+                <div class="error">سبد خرید شما خالی می باشد.</div>
+            </ul> -->
+            <div class="basketProgress">
+            </div>
+            <ul class="list-unstyled cd-cart-items shopping-cart-top">
+                <li>
+                    <a class="img__cnt" href="./products/apple/information1/informatin1.html">
+                        <img class="img__apple" src="./products/apple/images/img1.png" alt="apple_img1">
+                    </a>
+                    <a class="product__description" href="./products/apple/information1/informatin1.html">
+                        گوشی موبایل اپل مدل Iphone 13 ظرفیت 128 گیگابایت رم 4 گیگابایت - نات اکتیو | پارت نامبر SE/A تک
+                        سیم کارت
+                    </a>
+                    <div class="container__quantity">
+                        <span class="count">تعداد :</span>
+                        <div class="product-quantity">
+                            <button onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input class="quantity__input" type="number" value="1" min="1" max="10">
+                            <button onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                    </div>
+                    <div class="remove__container">
+                        <a class="remove" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20"
+                                 id="trashcan">
+                                <path d="M10.71,43.24A2.27,2.27,0,0,0,13,45.5H35a2.26,2.26,0,0,0,2.26-2.26l1.38-28.45H9.33ZM31.44,19.83h3.17l-.93,19.34a1.58,1.58,0,1,1-3.16,0Zm-9,0h3.16V39.17a1.58,1.58,0,0,1-3.16,0Zm-9,0h3.17l.92,19.34a1.58,1.58,0,0,1-3.16,0Zm25.17-13H29.78c0-.11,0-.21,0-.32V5.36c0-1.58-1-2.86-2.19-2.86H20.39c-1.21,0-2.19,1.28-2.19,2.86V6.5c0,.11,0,.21,0,.32H9.44c-1.21,0-2.19,1.27-2.19,2.85v4h33.5v-4C40.75,8.09,39.77,6.82,38.56,6.82Zm-18.9,0a2.29,2.29,0,0,1,2-1.89h4.6a2.29,2.29,0,0,1,2,1.89Z"
+                                      fill="#eb0e17" class="color000000 svgShape"></path>
+                            </svg>
+                            حذف
+                        </a>
+                    </div>
+                    <div class="price_area">
+                        <div class="new_price">۵۴,۹۹۹,۰۰۰ تومان</div>
+                    </div>
+                </li>
+            </ul>
+            <a class="btn" href="./order-registration/order.html" title="">
+                <span> ثبت سفارش</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+
+{% block content %}
+
+{% endblock content %}
+
+
+<footer id="contactus_click" class="footer">
+    <section class="contactus">
+        <div class="section-head">
+            <h3 class="section-head__title">ارتباط با ما </h3>
+            <p class="section-head__caption">با ما از راه های مختلف در ارتباط باشید</p>
+            <span class="section-head__line"></span>
+        </div>
+        <div class="concatus__photo"></div>
+        <div class="contactus__wrapper">
+            <div class="row row_help">
+                <div class="col-12 col-lg-5">
+                    <div class="footer__title">تماس با ما</div>
+                    <ul class="list-unstyled footer__ul">
+                        <li>
+                            <a href="tel:02125180" class="strClear" dir="ltr">تلفن : 02125180</a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@PersianMobile.com"> ایمیل : support@PersianMobile.com</a>
+                        </li>
+                        <li>
+                            <a href="#"> ساعات پاسخگویی : روزهای کاری 8:30 الی 21 <br> </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/maps/place/%D9%BE%D8%B1%D8%B4%DB%8C%D9%86+%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84+Persian+Mobile%E2%80%AD/@35.7240159,51.3099576,16z/data=!4m6!3m5!1s0x3f8dfda6d132689f:0x29aff08a92652680!8m2!3d35.7247647!4d51.3120388!16s%2Fg%2F11rrs9xkh9?hl=en&entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                               target="_blank">آدرس : تهران ، فردوس ، بلوار فردوس شرقی ، فروشگاه پرشین موبایل <br> </a>
+                        </li>
+                    </ul>
+                    <div class="socialFooter">
+                        <div class="socialFooter__title">
+                            ما را در شبکه های اجتماعی دنبال کنید
+                        </div>
+                        <div class="socialFooter__ul list-unstyled list-inline">
+                            <li>
+                                <a href="#" title="telegram" target="_blank">
+                                    <svg id="telegram" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                         viewBox="0 0 20 20">
+                                        <path id="Subtraction_2" data-name="Subtraction 2"
+                                              d="M10,20A10,10,0,0,1,2.929,2.929,10,10,0,0,1,17.071,17.071,9.935,9.935,0,0,1,10,20Zm-.133-6.834h0l2.5,1.842a.843.843,0,0,0,.4.127c.251,0,.42-.186.5-.551l1.642-7.734a.767.767,0,0,0-.091-.669.445.445,0,0,0-.36-.162.716.716,0,0,0-.243.046L4.576,9.783c-.327.128-.512.294-.506.456,0,.137.148.261.393.338l2.468.77,5.726-3.6a.5.5,0,0,1,.264-.092c.061,0,.1.02.117.054s-.01.088-.07.14L8.334,12.029l-.177,2.544a.632.632,0,0,0,.5-.246l1.206-1.161Z"
+                                              transform="translate(0 0)" fill="#039be5"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="insta" target="_blank">
+                                    <svg id="_029-instagram" data-name="029-instagram"
+                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="20" height="20" viewBox="0 0 20 20">
+                                        <defs>
+                                            <linearGradient id="linear-gradient" x1="0.5" y1="0.008" x2="0.5" y2="0.998"
+                                                            gradientUnits="objectBoundingBox">
+                                                <stop offset="0" stop-color="#e09b3d"></stop>
+                                                <stop offset="0.3" stop-color="#c74c4d"></stop>
+                                                <stop offset="0.6" stop-color="#c21975"></stop>
+                                                <stop offset="1" stop-color="#7024c4"></stop>
+                                            </linearGradient>
+                                            <linearGradient id="linear-gradient-2" y1="-0.451" y2="1.462"
+                                                            xlink:href="#linear-gradient"></linearGradient>
+                                            <linearGradient id="linear-gradient-3" y1="-1.396" y2="6.586"
+                                                            xlink:href="#linear-gradient"></linearGradient>
+                                        </defs>
+                                        <path id="Path_236" data-name="Path 236"
+                                              d="M14.042,0H5.958A5.965,5.965,0,0,0,0,5.958v8.084A5.965,5.965,0,0,0,5.958,20h8.084A5.965,5.965,0,0,0,20,14.042V5.958A5.965,5.965,0,0,0,14.042,0Zm3.946,14.042a3.946,3.946,0,0,1-3.946,3.946H5.958a3.946,3.946,0,0,1-3.946-3.946V5.958A3.946,3.946,0,0,1,5.958,2.012h8.084a3.946,3.946,0,0,1,3.946,3.946v8.084Z"
+                                              fill="url(#linear-gradient)"></path>
+                                        <path id="Path_237" data-name="Path 237"
+                                              d="M138.173,133a5.173,5.173,0,1,0,5.173,5.173A5.179,5.179,0,0,0,138.173,133Zm0,8.333a3.161,3.161,0,1,1,3.161-3.161A3.161,3.161,0,0,1,138.173,141.333Z"
+                                              transform="translate(-128.173 -128.173)"
+                                              fill="url(#linear-gradient-2)"></path>
+                                        <circle id="Ellipse_1" data-name="Ellipse 1" cx="1.239" cy="1.239" r="1.239"
+                                                transform="translate(13.943 3.627)"
+                                                fill="url(#linear-gradient-3)"></circle>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="Aparat" target="_blank">
+                                    <svg id="aparat" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                         viewBox="0 0 20 20">
+                                        <path id="Path_7518" data-name="Path 7518"
+                                              d="M13.18,19.954,1.972,16.529A2.685,2.685,0,0,1,.19,13.176L3.61,1.972A2.685,2.685,0,0,1,6.964.19L18.172,3.61a2.685,2.685,0,0,1,1.782,3.353L16.529,18.172A2.683,2.683,0,0,1,13.18,19.954Z"
+                                              transform="translate(-0.072 -0.072)"></path>
+                                        <circle id="Ellipse_7" data-name="Ellipse 7" cx="8.545" cy="8.545" r="8.545"
+                                                transform="translate(1.455 1.455)" fill="#ef3087" stroke="#fff"
+                                                stroke-miterlimit="10" stroke-width="1"></circle>
+                                        <circle id="Ellipse_8" data-name="Ellipse 8" cx="1.07" cy="1.07" r="1.07"
+                                                transform="translate(8.93 8.93)" fill="#fcfcfc"></circle>
+                                        <path id="Path_7519" data-name="Path 7519"
+                                              d="M94.125,95.51a2.4,2.4,0,1,1,2.893-1.782A2.406,2.406,0,0,1,94.125,95.51Zm6.755,1.6a2.4,2.4,0,1,1,2.893-1.782A2.406,2.406,0,0,1,100.881,97.115Zm-8.364,5.146a2.4,2.4,0,1,1,2.893-1.782A2.406,2.406,0,0,1,92.517,102.262Zm6.755,1.609a2.4,2.4,0,1,1,2.893-1.782A2.406,2.406,0,0,1,99.272,103.87Z"
+                                              transform="translate(-87.256 -87.352)" fill="#fcfcfc"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="whatsapp" target="_blank">
+                                    <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg"
+                                         xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="whatsappSvgIcon"
+                                         x="0px" y="0px" viewBox="0 0 418.135 418.135"
+                                         style="enable-background:new 0 0 418.135 418.135;" xml:space="preserve"><g><path style="fill:#7AD06D;" d="M198.929,0.242C88.5,5.5,1.356,97.466,1.691,208.02c0.102,33.672,8.231,65.454,22.571,93.536   L2.245,408.429c-1.191,5.781,4.023,10.843,9.766,9.483l104.723-24.811c26.905,13.402,57.125,21.143,89.108,21.631   c112.869,1.724,206.982-87.897,210.5-200.724C420.113,93.065,320.295-5.538,198.929,0.242z M323.886,322.197   c-30.669,30.669-71.446,47.559-114.818,47.559c-25.396,0-49.71-5.698-72.269-16.935l-14.584-7.265l-64.206,15.212l13.515-65.607   l-7.185-14.07c-11.711-22.935-17.649-47.736-17.649-73.713c0-43.373,16.89-84.149,47.559-114.819   c30.395-30.395,71.837-47.56,114.822-47.56C252.443,45,293.218,61.89,323.887,92.558c30.669,30.669,47.559,71.445,47.56,114.817   C371.446,250.361,354.281,291.803,323.886,322.197z"></path><path
+                                            style="fill:#7AD06D;"
+                                            d="M309.712,252.351l-40.169-11.534c-5.281-1.516-10.968-0.018-14.816,3.903l-9.823,10.008   c-4.142,4.22-10.427,5.576-15.909,3.358c-19.002-7.69-58.974-43.23-69.182-61.007c-2.945-5.128-2.458-11.539,1.158-16.218   l8.576-11.095c3.36-4.347,4.069-10.185,1.847-15.21l-16.9-38.223c-4.048-9.155-15.747-11.82-23.39-5.356   c-11.211,9.482-24.513,23.891-26.13,39.854c-2.851,28.144,9.219,63.622,54.862,106.222c52.73,49.215,94.956,55.717,122.449,49.057   c15.594-3.777,28.056-18.919,35.921-31.317C323.568,266.34,319.334,255.114,309.712,252.351z"></path></g></svg>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <p>
+                        <a href="https://www.google.com/maps/place/%D9%BE%D8%B1%D8%B4%DB%8C%D9%86+%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84+Persian+Mobile%E2%80%AD/@35.7240159,51.3099576,16z/data=!4m6!3m5!1s0x3f8dfda6d132689f:0x29aff08a92652680!8m2!3d35.7247647!4d51.3120388!16s%2Fg%2F11rrs9xkh9?hl=en&entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                           target="_blank">
+                            <img class="location" alt="image_4" src="./image/img4.png"
+                                 style="width: 300px; height: 365px;">
+                        </a><br>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="contact">
+                        <h4 class="contact__title">ارسال پیشنهادات و انتقادات</h4>
+                        <form action="#" class="contact__form">
+                            <input type="text" class="contact__input" placeholder="نام و نام خانوادگی">
+                            <input type="text" class="contact__input" placeholder="ایمیل">
+                            <textarea class="contact__input contact__input--textarea" rows="5"
+                                      placeholder="پیام خود را وارد کنید"></textarea>
+                            <button class="contact__submit" type="submit">ارسال</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+<script src={% static "scripts/app.js" %}></script>
+<script src={% static "scripts/swiper-bundle.min.js" %}></script>
+<script type="text/javascript">
+    const swiperOptions = {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        spaceBetween: 40,
+        breakpoints: {
+            768: {
+                slidesPerView: 2
+            },
+            1200: {
+                slidesPerView: 3
+            }
+        }
+    }
+    const swiper1 = new Swiper('.swiper1', swiperOptions)
+    const swiper2 = new Swiper('.swiper2', swiperOptions)
+    const swiper3 = new Swiper('.swiper3', swiperOptions)
+    const swiper4 = new Swiper('.swiper4', swiperOptions)
+</script>
+</html>

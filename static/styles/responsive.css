@@ -1,0 +1,254 @@
+@media screen and (max-width: 1200px) {
+
+    .home__photo{
+        width: 35rem;
+        height: 25rem;
+    }
+    .about__description{
+        max-width: 44rem;
+    }
+    .search{
+        display: none;        
+    }
+    .products_img{
+        width: 30rem;
+    }
+    .svg_products{
+        width: 30rem;
+    }
+    .svg-products_two{
+        width: 30rem;
+    }
+    .cleverly-list{
+        margin-left: 0;
+    }
+    .cleverly-list__item::before{
+        max-width: 24rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav{
+        justify-content: center;
+    }
+    .nav__right{
+        margin-left: 2rem;
+    }
+    .nav__left{
+    }
+    .login__link--input{
+        display: none;
+    }
+    .nav__left--login{
+        margin-left: 1rem;
+    }
+    .home__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home__photo{
+        /* نتونستیم دیسپلی فلکس بدیم چون بهش طول و عرض داده بودیم و برای وسط چین شدن از مارجین اتو استفاده کردیم */
+        margin: 0 auto;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about__description{
+        max-width: 61rem;
+    }
+    .products_img{
+        width: 25rem;
+    }
+    .svg_products{
+        width: 25rem;
+        height: 7rem;
+    }
+    .svg-products_two{
+        width: 25rem;
+        height: 11rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        /* position: fixed; */
+        right: 0;
+        left: 0;
+    }
+    .menu{
+        /* display: none; */
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        flex-direction: column;
+        width: 94%;
+        left: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        transition: all 200ms ease-in;
+        height: 0;
+        overflow: hidden;
+        border-radius: 1rem;
+        box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
+        margin-top: 2rem;
+    }
+    .menu__item:first-child{
+        margin-top: 2rem;
+    }
+    .menu__item{
+        margin-right: 0;
+        margin-bottom: 2rem;
+        transition: all 100ms ease-in;
+    }
+    .menu__item:hover{
+        color: var(--primery-color);
+    }
+    .menu--open{
+        height: 20rem;
+    }
+    .menu__link:hover{
+        color: var(--primery-color);
+    }
+    .nav{
+        justify-content: space-around;
+    }
+    /* میتوان به حای بلاک ما فلکس بدیم و فلکس هم همانند بلاک باعث نمایان شدن ایکون میشود و چون ما نیاز داشتیم به فلکس به آن فلکس دادیم */
+    .nav__toggle-icon {
+        display: flex;
+    }
+    .nav__toggle-line,
+    .nav__toggle-line::before,
+    .nav__toggle-line::after {
+        width: 4rem;
+    }
+    .main{
+        padding-top: 12rem;
+    }
+    .home__content {
+        margin-top: -15rem;
+    }
+    .home__welcom{
+        font-size: 2.5rem;
+    }
+    .home__caption{
+        font-size: 1.4rem;
+    }
+    .about__description {
+        max-width: 44rem;
+    }
+    .nav__right{
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .nav__toggle-line,
+    .nav__toggle-line::before,
+    .nav__toggle-line::after {
+        width: 3rem;
+    }
+    .nav__left{
+        gap: 0;
+    }
+    .login__link--logo{
+        height: 4rem;
+    }
+    .nav__left--logo{
+        height: 5rem;
+    }
+    .nav__left--login {
+        margin-left: 0;
+        margin-right: -1rem;
+    }
+    .nav__left--bying{
+        margin-left: 1rem;
+    }
+    .login__link--none{
+        display: none;
+    }
+    .login__link--logo{
+        transition: all 100ms ease-in;
+    }
+    .login__link--logo:hover{
+        stroke: #fff;
+    }
+    .login__link--none2{
+        display: block;
+        border: none;
+    }
+    .home__caption{
+        font-size: 1.3rem;
+    }
+    .home__photo{
+        width: 30rem;
+        height: 20rem;
+    }
+    .products_img{
+        width: 17rem;
+    }
+
+    .svg_products{
+        width: 16rem;
+        height: 5rem;
+    }
+    .svg-products_two{
+        width: 17rem;
+        height: 8rem;
+    }
+    .concatus__photo{
+        width: 30rem;
+        height: 30rem;
+    }
+
+
+}
+   
+
+
+
+
+@media screen and (max-width: 390px) {
+    .nav__right{
+        gap: 0;
+        margin-left: 0;
+    }
+    .login__link--logo{
+        height: 3.5rem;
+    }
+    .nav__left--logo{
+        height: 4.5rem;
+    }
+
+    .home__content{
+        font-size: 1rem;
+    }
+    .home__photo{
+        width: 25rem;
+        height: 15rem;
+    }
+    .row_flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex_mobile{
+        width: 50%;
+    }
+    .section-head__line{
+        width: 22rem;
+    }
+    .concatus__photo{
+        width: 25rem;
+        height: 25rem;
+    }
+    .location{
+        display: none;
+    }
+    .contact{
+        margin-top: -5rem;
+    }
+
+}
