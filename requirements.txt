@@ -1,6 +1,9 @@
 asgiref==3.8.1
 backports-datetime-fromisoformat==2.0.3
+crispy-bootstrap5==2025.4
 Django==5.2
+django-allauth==65.7.0
+django-crispy-forms==2.4
 environs==14.1.1
 marshmallow==4.0.0
 mysqlclient==2.2.7

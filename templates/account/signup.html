@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ثبت نام در سایت پرشین موبایل</title>
+    <link rel="icon" type="image/png" href="images/sabz-fav.png">
+    <link rel="stylesheet" href="{% static 'signup/styles/app.css' %}">
+    <link rel="icon" type="image/png/svg" href="{% static 'signup/image/mobile.svg' %}">
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h1>پرشین موبایل</h1>
+        <br>
+        <div>
+            <input type="text" placeholder="نام مستعار" name="username" autofocus required>
+        </div>
+        <br>
+        <div>
+            <input type="email" placeholder="ایمیل" name="email" required>
+        </div>
+        <br>
+        <div>
+            <input type="password" placeholder="رمز عبور" name="password1"  required>
+            <br>
+            <input type="password" placeholder="تکرار رمز عبور" name="password2" required>
+        </div>
+        <br>
+        <button type="submit">ثبت نام</button>
+        <!-- <input type="submit" value="ثبت نام"> -->
+    </form>
+
+</body>
+</html>

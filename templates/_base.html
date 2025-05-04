@@ -12,6 +12,8 @@
     <link rel="stylesheet" href={% static "styles/swiper-bundle.min.css" %}>
 </head>
 
+{% block style %}
+{% endblock style %}
 
 <header class="header">
     <div class="container">
@@ -71,7 +73,7 @@
                     </a>
                 </li>
                 <li class="nav__left--login login__link--none">
-                    <a class="login__link" href="./login/login.html">
+                    <a class="login__link" href="{% url 'account_login' %}">
                         ورود | ثبت نام
                     </a>
                 </li>
