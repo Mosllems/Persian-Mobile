@@ -1,5 +1,7 @@
 {% load static %}
 {% load i18n %}
+{% load persian_translation_tags %}
+{% load humanize %}
 
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
@@ -97,7 +99,7 @@
 {#                </div>#}
                 <div class="single__price">
                     <span class="single__price--new">
-                        {{ product.price }}
+                        {{ product.price|intcomma:False|translate_number }}
                         تومان
                     </span>
                 </div>
