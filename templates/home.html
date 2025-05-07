@@ -77,7 +77,7 @@
                         <div class="col-6 col-md-4 flex_mobile">
                             <div class="products-box_one">
                                 <img class="products_img" src={% static "image/iphone.png.webp" %} alt="iphone">
-                                <a class="products_link" href="./products/apple/apple.html">
+                                <a class="products_link" href="{% url 'listview' 'iphone' %}">
                                     <svg class="svg_products" xmlns="http://www.w3.org/2000/svg" width="390" height="90"
                                          viewBox="0 0 16 16" id="apple">
                                         <g fill-rule="evenodd">
@@ -93,7 +93,7 @@
                         <div class="col-4 col-md-4 flex_mobile">
                             <div class="products-box_two">
                                 <img class="products_img" src={% static "image/samsung.png.webp" %} alt="samsung">
-                                <a class="products_link" href="./products/samsung/samsung.html">
+                                <a class="products_link" href="{% url 'listview' 'samsung' %}">
                                     <svg class="svg_products" xmlns="http://www.w3.org/2000/svg" width="390"
                                          height="130" viewBox="0 0 192.756 192.756" id="samsung">
                                         <g fill-rule="evenodd" clip-rule="evenodd">
@@ -107,7 +107,7 @@
                         <div class="col-5 col-md-4 flex_mobile">
                             <div class="products-box_three">
                                 <img class="products_img" src={% static "image/xiaomi.png.webp" %} alt="xiaomi">
-                                <a class="products_link" href="./products/xiaomi/xaiomi.html">
+                                <a class="products_link" href="{% url 'listview' 'xiaomi' %}">
                                     <svg class="svg_products" xmlns="http://www.w3.org/2000/svg" width="390" height="90"
                                          xml:space="preserve" viewBox="0 0 16 16" id="xiaomi">
                                             <path d="M6.5 3H0v11h2V5h4.5C7.327 5 8 5.673 8 6.5V14h2V6.5C10 4.57 8.43 3 6.5 3z"></path>

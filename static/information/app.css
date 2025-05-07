@@ -1,0 +1,417 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: 10px;
+}
+:root{
+    --text-color: #000;
+    --primery-color: #0ABEAD;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+@font-face{
+    font-family: "shabnam";
+    src: url("../fonts/Shabnam-FD.woff2") format("woff2");
+}
+body{
+    font-family: "shabnam",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fafafa;
+}
+.container{
+    width: 1216px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 56px;
+}
+.wrapper__login__bying__search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search{
+    background-color: transparent;
+    border: 1px solid var(--primery-color);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    margin-right: 3rem;
+}
+.searchform{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.search_inp{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0.6rem;
+    font-size: 1.6rem;
+}
+input::placeholder{
+    color: var(--primery-color);
+    opacity: 0.9;
+}
+.search_btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+.wrapper__login__bying{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 35px;
+}
+.nav__left--login{
+    margin-left: 40px;
+    display: none;
+
+}
+
+.login__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+ .login__link--logo {
+    transition: all 100ms ease-in;
+    font-weight: 300;
+}
+ .login__link--logo:hover path{
+    stroke: var(--primery-color);
+}
+.nav__left--bying{
+    margin-top: 10px;
+}
+.nav__left--logo{
+    transition: fill 100ms ease-in;
+} 
+.nav__left--logo:hover path{
+    stroke: var(--primery-color);
+}
+.nav__left--logo:hover circle {
+    fill: var(--primery-color);
+}
+.nav__left--search{
+    /* display: none; */
+}
+.nav-menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -40rem;
+    width: 40rem;
+    background-color: #fff;
+    padding: 25px;
+    transition: 250ms ease-in-out;
+    z-index: 100;
+    border-left: 1px solid #dfd4d4;
+}
+.close-btn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.4rem;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+    color: #00000091;
+    font-weight: 100;
+}
+.close-btn:hover{
+    color: var(--primery-color);
+}
+.nav-menu--open{
+    right: 0;
+}
+.nav-menu__title{
+    font-size: 20px;
+    color: var(--primery-color);
+    font-family:"shabnam";
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.list-menu{
+    padding-left: 15px;
+    padding-top: 50px;
+    overflow-y: auto;
+    margin-left: 2rem;
+    margin-right: -0.8rem;
+}
+.error{
+    padding: 10px;
+    border: solid 1px #FBD3C6;
+    background: #FDE4E1;
+    color: #CB4721;
+    line-height: 30px;
+    border-radius: 5px !important;
+    clear: both !important;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+.basketProgress{
+    border-bottom: 1px solid var(--primery-color);
+    padding-bottom: 10px;
+}
+.cd-cart-items {
+    margin-top: 20px;
+    overflow-y: auto;
+    height: calc(100vh - 200px);
+    margin-bottom: 20px;
+}
+.list-unstyled {
+    padding-right: 0;
+    list-style: none;
+}
+.cd-cart-items li {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.img__cnt{
+    width: 7rem;
+    padding: 5px;
+    text-align: center;
+    float: right;
+    border: 1px solid var(--primery-color);
+    margin-left: 15px;
+}
+.img__apple{
+    max-width: 100%;
+    height: auto;
+}
+.product__description{
+    font-size: 13px;
+    text-align: justify;
+    color: var(--text-color);
+    transition: all 100ms ease-in;
+}
+.product__description:hover{
+    color: var(--primery-color);
+}
+.container__quantity{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.count{
+    display: block;
+    margin-top: 0.3rem;
+    color: #4d4d4d;
+    font-size: 1.4rem;
+}
+.product-quantity input::-webkit-outer-spin-button,
+.product-quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+.product-quantity {
+    display: flex;
+}
+.product-quantity input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid var(--primery-color);
+    outline: none;
+}
+.product-quantity button {
+    width: 30px;
+    background: var(--primery-color);
+    border: 1px solid var(--primery-color);
+    cursor: pointer;
+}
+.remove__container{
+    display: flex;
+    margin: 1rem 8rem 1rem 0;
+}
+.svg__remove{
+    color: red;
+}
+.remove{
+    display: flex;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: red;
+}
+.price_area{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1px;
+    color: var(--text-color);
+}
+.new_price{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn{
+    background-color: var(--primery-color);
+    color: #fff;
+    border: none;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: -3rem;
+    transition: all 100ms ease-in;
+}
+.btn:hover{
+    background-color: #13ccb9;
+}
+.nav-cart--open{
+
+}
+.single__product{
+    display: flex;
+    padding: 24px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+}
+.single__product__gallery{
+    width: 25%;
+    margin-top: 2.5rem;
+}
+.title{
+    margin: 0 1rem 2rem 0;
+    color: var(--text-color);
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.img__gallery{
+    width: 100%;
+}
+.single__product__info{
+    flex: 1 1 0;
+    padding: 10px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.single__product__headline{
+    border-bottom: 1px solid #f2f2f2;
+    padding: 0 0 1rem;
+    display: flex;
+    min-height: 8.5rem;
+    align-items: center;
+}
+
+.single__product__headline__upper{
+    line-height: 2;
+    color: var(--text-color);
+    font-size: 1.9rem;
+    font-weight: bold;
+
+}
+.single__product__headline__bottom{
+    color: #A5A5A5;
+    font-weight: 400;
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 0.8rem; 
+}
+.single__product__directory{
+    margin: 0 0 15px;
+    color: #515151;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.list-unstyled{
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+.list__unstyled__item{
+    margin-bottom: 1rem;
+}
+.bold__directory{
+    font-weight: bold;
+    color: #000;
+}
+.wrapper__directory2__shopping{
+    display: flex;
+    gap: 8rem;
+}
+.single__product__directory2{
+    width: 100%;
+}
+.directory2__caption{
+    list-style: none;
+    margin-right: -50px;
+}
+.directory2__text{
+    border-top: 1px solid #D9D9D9;
+    padding: 1rem 1rem;
+}
+.shopping{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5rem;
+}
+.product__offer-percent{
+    background-color: #E3F2FD;
+    color: var(--primery-color);
+    font-weight: bold;
+    padding: 2px 4px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 2rem;
+}
+.product_offer-price{
+    text-decoration: line-through;
+    color: #455A64;
+    font-size: 2rem;
+}
+.single__price{
+
+}
+.single__price--new{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primery-color);
+}
+.single__shopping{
+    width: 80%;
+}
+.single__shopping__link{
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 1rem;
+    background-color: var(--primery-color);
+    border: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 100ms ease-in;
+}
+.shopping__cart__svg{
+    margin-left: 1rem;
+}
+.single__shopping__link:hover{
+    background-color: #13ccb9;
+}
+
+
+
