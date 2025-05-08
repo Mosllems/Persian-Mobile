@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django.contrib.humanize',
+
     # third party apps
     'allauth',
     'allauth.account',
@@ -52,6 +54,10 @@ INSTALLED_APPS = [
     'pages',
     'accounts',
     'products',
+    'persian_translation',
+    'cart',
+    'orders',
+
 ]
 
 MIDDLEWARE = [
@@ -78,6 +84,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # custom Context Processors
+                "cart.context_processors.cart",
             ],
         },
     },
@@ -129,12 +137,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fa'
 
 TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tehran'
 
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
 
 
