@@ -1,0 +1,94 @@
+{% load static %}
+{% load humanize %}
+{% load persian_translation_tags %}
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت سفارش</title>
+    <link rel="icon" type="image/png" href="../image/svg/mobile.svg">
+    <link rel="stylesheet" href="{% static 'order/app.css'  %}">
+</head>
+<body>
+    <div class="order"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2>جزئیات سفارش</h2>
+                    <div class="checkout-form">
+                        <form  method="POST" class="form" action="#">
+                            {% csrf_token %}
+                            <div class="form-row mb--20">
+                                <div class="form__group col-5">
+                                    <label for="billing_fname" class="form__label">نام <span class="required">*</span></label>
+                                    <input type="text" name="name" id="billing_fname" class="form__input">
+                                </div>
+                                <div class="form__group form__group--right col-5">
+                                    <label for="billing_lname" class="form__label">نام خانوادگی <span class="required">*</span></label>
+                                    <input type="text" name="family_name" id="billing_lname" class="form__input form__input--2">
+                                </div>
+                            </div>
+                            <div class="form-row mb--20">
+                                <div class="form__group col-12">
+                                    <label for="billing_company" class="form__label">آدرس</label>
+                                    <input type="text" name="address" id="billing_company" class="form__input">
+                                </div>
+                            </div>
+                            <div class="form-row mb--20">
+                                <div class="form__group col-12">
+                                    <label for="billing_phone" class="form__label">شماره همراه <span class="required">*</span></label>
+                                    <input type="text" name="phone_number" id="billing_phone" class="form__input">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form__group col-12">
+                                    <label for="orderNotes" class="form__label form__label--2">یادداشت شما</label>
+                                    <textarea class="form__input form__input--textarea" id="orderNotes" name="order_note" placeholder="اگر یادداشتی دارید در اینجا وارد کنید. در غیر این صورت این مکان را خالی بگذارید"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="send__data">ارسال</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="order-details">
+                        <h2>سفارش شما</h2>
+                        <ul class="list-unstyled cd-cart-items shopping-cart-top">
+                            {% for item in cart %}
+                                <li>
+                                    <a class="img__cnt" href="../products/apple/information1/informatin1.html">
+                                        <img class="img__apple" src="{{ item.product_obj.image.url }}" alt="apple_img1">
+                                    </a>
+                                    <a class="product__description" href="../products/apple/information1/informatin1.html">
+                                        {{ item.product_obj.name }}
+                                    </a>
+                                   <div class="price_area">
+                                        <div class="new_price">{{ item.product_obj.price|intcomma:False|translate_number }} تومان</div>
+                                   </div>
+                                </li>
+                            {% endfor %}
+{#                            <div class="total">#}
+{#                                <h3>مجموع</h3>#}
+{#                                <span> تومان</span>#}
+{#                            </div>#}
+                            <div class="checkout-payment">
+                                <h3>روش پرداخت</h3>
+                                <form action="#" class="payment-form">
+                                    <div class="payment-radio">
+                                            <input type="radio" value="bank" name="payment-method" id="bank" checked="">
+                                            <label class="payment-label" for="cheque">درگاه آنلاین زرین پال</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
